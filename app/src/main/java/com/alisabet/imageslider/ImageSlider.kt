@@ -27,9 +27,9 @@ class ImageSlider : AppCompatActivity() {
         for (i in XMEN.indices)
             XMENArray.add(XMEN[i])
 
-        mPager = findViewById<View>(R.id.pager) as ViewPager
+        mPager = findViewById<ViewPager>(R.id.pager)
         mPager!!.adapter = MyAdapter(this, XMENArray)
-        val indicator = findViewById<View>(R.id.indicator) as CircleIndicator
+        val indicator = findViewById<CircleIndicator>(R.id.indicator)
         indicator.setViewPager(mPager)
 
         // Auto start of viewpager
